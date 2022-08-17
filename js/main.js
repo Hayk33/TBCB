@@ -104,6 +104,18 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+    // custom tbcb
+    $(document).ready(function() {
+        $(window).on("scroll", function() {
+          console.log($(this).scrollTop())
+          if($(this).scrollTop() >= 30){
+            // set to new image
+            $(".brand-logo img").attr("src","img/logoBlack.png");
+          } else {
+            //back to default
+            $(".brand-logo img").attr("src","img/logoWhite.png");
+          }
+        })
+      })
 })(jQuery);
 
