@@ -11,7 +11,9 @@ Important colors
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
-
+.container-xxl {
+    max-width: 100% !important;
+}
 
 /*** Spinner ***/
 #spinner {
