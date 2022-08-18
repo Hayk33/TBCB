@@ -1,9 +1,9 @@
 <?php
 
     $hostdb = "localhost";
-    $usernamedb = "root";
-    $passworddb = "root";
-    $db = "oop_login_register";
+    $usernamedb = "a8b40a_tbcb352";
+    $passworddb = "cc84123aA!";
+    $db = "db_a8b40a_tbcb352";
 
     $conn = mysqli_connect($hostdb, $usernamedb, $passworddb, $db);
 
