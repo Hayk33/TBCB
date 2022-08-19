@@ -11,7 +11,6 @@
 <body>
 
   <?php
-
     session_start();
 
     if ($_SESSION["username"] == null) {
@@ -32,7 +31,6 @@
       $image = $row["image"];
 
     }
-
   ?>
 
     <header>
@@ -61,73 +59,73 @@
                         </div>
                       </div>
                     </div>
-                  </nav>
+                </nav>
             </div>
         </div>
     </header>
     <main>
         <section class="section-one">
-                    <div class="profile-image col-12"></div>
-                      <div class="profile-information fixed-top col-9">
-                        <div class="col-md-5">
-                            <div class="profile-information-userImage">
-                                <?php if ($gender == "male" && $image == "") { ?>
-                                  <img src="image/userPhotoOne.png" alt="">
-                                <?php } ?>
-                                <?php if ($gender == "female" && $image == "") { ?>
-                                  <img src="image/userPhotoTwo.png" alt="">
-                                <?php } ?>
-                                <?php if (!$image == "") { ?>
-                                  <img src="image/<?php echo $image ?>" alt="">
-                                <?php } ?>
+            <div class="profile-image col-12"></div>
+            <div class="profile-information fixed-top col-9">
+                <div class="col-md-5">
+                    <div class="profile-information-userImage">
+                        <?php if ($gender == "male" && $image == "") { ?>
+                            <img src="image/userPhotoOne.png" alt="">
+                        <?php } ?>
+                        <?php if ($gender == "female" && $image == "") { ?>
+                            <img src="image/userPhotoTwo.png" alt="">
+                        <?php } ?>
+                        <?php if (!$image == "") { ?>
+                            <img src="image/<?php echo $image ?>" alt="">
+                        <?php } ?>
+                    </div>
+                </div>
+                <div class="all-profile-information col-md-7">
+                    <div class="profile-information-user col-12">
+                        <h2><?php echo $username ?></h2>
+                        <div class="profile-information-user-icons">
+                            <a href="php/changing/changePhoto.php"><i class="fa-solid fa-circle-user"></i></a>
+                            <a href="php/changing/changePassword.php"><i class="fa-solid fa-lock"></i></a>
+                        </div>
+                        <p><?php echo $level ?></p>
+                    </div>
+                    <div class="profile-information-user">
+                        <h3>Information</h3>
+                        <div class="ul col-md-12">
+                            <div class="col-5">
+                                <p>Id user:</p>
+                            </div>
+                            <div class="col-7">
+                                <p><?php echo $id ?></p>
                             </div>
                         </div>
-                        <div class="all-profile-information col-md-7">
-                          <div class="profile-information-user col-12">
-                          <h2><?php echo $username ?></h2>
-                              <div class="profile-information-user-icons">
-                                  <a href="php/changing/changePhoto.php"><i class="fa-solid fa-circle-user"></i></a>
-                                  <a href="php/changing/changePassword.php"><i class="fa-solid fa-lock"></i></a>
-                              </div>
-                              <p><?php echo $level ?></p>
-                          </div>
-                            <div class="profile-information-user">
-                              <h3>Information</h3>
-                                <div class="ul col-md-12">
-                                    <div class="col-5">
-                                        <p>Id user:</p>
-                                    </div>
-                                    <div class="col-7">
-                                        <p><?php echo $id ?></p>
-                                    </div>
-                                </div>
-                                <div class="ul col-md-12">
-                                    <div class="col-5">
-                                        <p>Username:</p>
-                                    </div>
-                                    <div class="col-7">
-                                        <p><?php echo $username ?></p>
-                                    </div>
-                                </div>
-                                <div class="ul col-md-12">
-                                    <div class="col-5">
-                                        <p>Level:</p>
-                                    </div>
-                                    <div class="col-7">
-                                        <p><?php echo $level ?></p>
-                                    </div>
-                                </div>
-                                <div class="ul col-md-12">
-                                    <div class="col-5">
-                                        <p>Gender:</p>
-                                    </div>
-                                    <div class="col-7">
-                                        <p><?php echo $gender ?></p>
-                                    </div>
-                                </div>
+                        <div class="ul col-md-12">
+                            <div class="col-5">
+                                <p>Username:</p>
+                            </div>
+                            <div class="col-7">
+                                <p><?php echo $username ?></p>
                             </div>
                         </div>
-                      </div>
+                        <div class="ul col-md-12">
+                            <div class="col-5">
+                                <p>Level:</p>
+                            </div>
+                            <div class="col-7">
+                                <p><?php echo $level ?></p>
+                            </div>
+                        </div>
+                        <div class="ul col-md-12">
+                            <div class="col-5">
+                                <p>Gender:</p>
+                            </div>
+                            <div class="col-7">
+                                <p><?php echo $gender ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
