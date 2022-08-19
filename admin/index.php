@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Admin Panel</title>
 </head>
@@ -47,6 +48,13 @@
         </div>
     </header>
 
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/ba53ee2513.js" crossorigin="anonymous"></script>
+    <script src="js/loader.js"></script>
+
 </body>
 </html>
