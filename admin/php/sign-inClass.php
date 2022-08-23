@@ -79,8 +79,7 @@ Class SignIn {
         $result;
         include "database.php";
 
-        $password = md5($this->password);
-        $checking = $conn->query("SELECT * FROM users WHERE username='$this->username' AND password='$password'");
+        $checking = $conn->query("SELECT * FROM users WHERE username='$this->username' AND password='$this->password'");
 
         if ($checking->num_rows === 0) {
             $result = false;

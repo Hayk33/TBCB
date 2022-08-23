@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
@@ -50,10 +50,13 @@
                         <div class="offcanvas-body">
                           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="home.php">Home</a>
+                                <a class="nav-link active" aria-current="page" href="home.php">Home</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="php/sign-out.php">Sign out</a>
+                                <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogo">Change logo</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="php/sign-out.php">Sign out</a>
                             </li>
                           </ul>
                         </div>
@@ -129,7 +132,29 @@
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <div class="modal fade" id="modalLogo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Logo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form method="POST" action="php/changing/changeLogo.php" enctype="multipart/form-data">
+                      <div class="modal-body">
+                          <div class="input-group">
+                              <input class="form-control" type="file" name="logo" accept="image/jpg, image/png, image/jpeg" required>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="submit" class="btn btn-primary" name="submit">Save changes</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ba53ee2513.js" crossorigin="anonymous"></script>
 </body>
 </html>

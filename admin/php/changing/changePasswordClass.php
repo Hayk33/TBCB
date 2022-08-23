@@ -54,8 +54,7 @@ class ChangePassword {
             $alert = "Your password has been changed!";
             $id = $_SESSION["id"];
             include "../database.php";
-            $password = md5($this->newPassword);
-            $conn->query("UPDATE users SET password='$password' WHERE id='$id'");
+            $conn->query("UPDATE users SET password='$this->newPassword' WHERE id='$id'");
             header("location: changePassword.php?alert=$alert");
         }
     }

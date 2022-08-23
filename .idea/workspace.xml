@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e933a05e-87e3-48ed-8731-b375a6e4c94b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/php/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/php/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/php/changing/changePasswordClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/php/changing/changePasswordClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/php/sign-inClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/php/sign-inClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logoWhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logoWhite.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DWnynyaamJF6tNITurUzgMYNlx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +62,9 @@
       <workItem from="1660823967185" duration="127000" />
       <workItem from="1660824115274" duration="408000" />
       <workItem from="1660900229540" duration="1768000" />
-      <workItem from="1660910490633" duration="2434000" />
+      <workItem from="1660910490633" duration="3350000" />
+      <workItem from="1660999851655" duration="41000" />
+      <workItem from="1661067838208" duration="2750000" />
     </task>
     <servers />
   </component>
